@@ -105,6 +105,18 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".OtherActivity"
+            android:label="other" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:scheme="push"
+                    android:host="com.example.yuwan.pushtest.otheractivity" />
+            </intent-filter>
+        </activity>
+
         <receiver android:name=".HuaweiPushReceiver" >
             <intent-filter>
                 <!-- 必须,用于接收token | Must， for receiving token -->
